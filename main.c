@@ -3,29 +3,6 @@
 
 
 char* get_file_name(char* path){
-    // char slash = '/';
-    // char* file_name = strrchr(path,slash);
-
-    // if(file_name == NULL){
-    //     return path;
-    // }
-
-    // if(strcmp(file_name,"/") != 0){
-    //     return file_name;
-    // }
-    // printf("-----\n");
-    // char* aaa = &path[ file_name - path];
-
-    // while(aaa){ // おそらく文字が終わっても終わっていない
-    //     aaa--;
-    //     if(*aaa == '/'){
-    //         return aaa;
-    //     }
-    // }
-
-    // return path;
-
-    
 
 }
 
