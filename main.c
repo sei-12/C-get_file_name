@@ -4,18 +4,21 @@
 
 char* get_file_name(char* path){
     char slash = '/';
-    char* file_name;
-    char* buf = strchr(path,slash);
+    char* file_name = path;
+    char* buf = path;
 
     while(1){
         if(buf == NULL){
             break;
         }
+
         if(strcmp(buf,"/") == 0){
             break;
         }
 
-        buf++; //  スラッシュからひとつずらす
+        if(buf[0] == '/'){
+            buf++;
+        }
 
         file_name = buf;
         buf = strchr(file_name,slash);
