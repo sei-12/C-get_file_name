@@ -34,5 +34,14 @@ int main(int argc, char const *argv[]){
     printf("%s\n",get_file_name("aaa/aaa/seitaro"));
     printf("%s\n",get_file_name("hello/"));
     printf("%s\n",get_file_name("/python"));
+    printf("%s\n",get_file_name(NULL));
+    printf("%s\n",get_file_name(""));
+    printf("%s\n",get_file_name("/"));
+    printf("%s\n",get_file_name("/application support/code"));
+    printf("%s\n",get_file_name("こんにちわ/世界"));
+    printf("%s\n",get_file_name("/こんにちわ"));
+    printf("%s\n",get_file_name("こんにちわ/世界/"));
+    printf("%s\n",get_file_name("こんにちわ　世界/あああ")); // 全角スペース
+
     return 0;
 }
