@@ -1,5 +1,14 @@
 # get_file_name
 
+```
+NULL -> NULL
+/    -> /
+a/b  -> b
+a/b/ -> b/
+```
+
+<br>
+
 ```c
 #include <string.h>
 
