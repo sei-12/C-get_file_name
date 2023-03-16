@@ -3,7 +3,25 @@
 
 
 char* get_file_name(char* path){
+    char slash = '/';
+    char* file_name;
+    char* buf = strchr(path,slash);
 
+    while(1){
+        if(buf == NULL){
+            break;
+        }
+        if(strcmp(buf,"/") == 0){
+            break;
+        }
+
+        buf++; //  スラッシュからひとつずらす
+
+        file_name = buf;
+        buf = strchr(file_name,slash);
+    }
+
+    return file_name;
 }
 
 void test_get_file_name(){
